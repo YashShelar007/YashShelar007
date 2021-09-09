@@ -1,6 +1,6 @@
 <h1>Hi :wave:, I am Yash</h1>
 <h3>A passionate Frontend Developer </h3>
-<h3>A Junior undergraduate pursuing Computer Science</h3> 
+<h3>A Junior undergraduate pursuing Computer Science at Arizona State University</h3> 
 <p>
   :seedling: I’m currently learning <b>Javascript, React</b></p>
 <p>
