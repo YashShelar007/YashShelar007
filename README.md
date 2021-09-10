@@ -4,7 +4,7 @@
 <p>
   :seedling: I’m currently learning <b>Javascript, React</b></p>
 <p>
-:man_technologist: All of my projects are available on my <a href="https://yashshelar007.netlify.app/%22%3E"<b>Portfolio</b></a></p>
+:man_technologist: All of my projects are available on my <a href="https://yashshelar007.netlify.app/"<b>Portfolio</b></a></p>
 <p>
   :speech_balloon: Ask me about <b>HTML | CSS | Javascript | React</b></p>
 <p>
