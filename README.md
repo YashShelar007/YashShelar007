@@ -2,9 +2,7 @@
 <h3>A Junior undergraduate pursuing Computer Science at Arizona State University</h3> 
 <p>
   :seedling: I’m currently learning <b>Javascript, React</b></p>
-<p>
-:man_technologist: All of my projects are available on my <a href="https://yashshelar007.netlify.app/"<b>Portfolio</b></a></p>
-<p>
+
   :speech_balloon: Ask me about <b>C++ | C | Javascript | Java</b></p>
 <p>
 :mailbox: How to reach me <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yshelar@asu.edu&su=Hey Yash, just visited your Github!" target="_blank"> <b>yshelar@asu.edu</b></a>
