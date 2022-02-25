@@ -5,7 +5,7 @@
 <p>
 :man_technologist: All of my projects are available on my <a href="https://yashshelar007.netlify.app/"<b>Portfolio</b></a></p>
 <p>
-  :speech_balloon: Ask me about <b>HTML | CSS | Javascript | React</b></p>
+  :speech_balloon: Ask me about <b>C++ | C | Javascript | Java</b></p>
 <p>
 :mailbox: How to reach me <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yshelar@asu.edu&su=Hey Yash, just visited your Github!" target="_blank"> <b>yshelar@asu.edu</b></a>
 
