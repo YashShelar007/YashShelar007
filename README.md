@@ -10,6 +10,4 @@
 <p>
 <h3>Connect with me:</h3>
 
-<p><a display:inline-block align="center" href="https://codepen.io/yashshelar007" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg" alt="error404_sp" height="30" width="40" /></a>
-<a  href="https://twitter.com/YashShe19788801" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="error404_sp" height="30" width="40" /></a>
 <a  href="https://www.linkedin.com/in/yash-shelar-672350208/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="shreyasi-patil-54b18a190" height="30" width="40" /></a>
