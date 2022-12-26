@@ -1,5 +1,5 @@
 <h1>Hi :wave:, I am Yash</h1>
-<h3>A Junior undergraduate pursuing Computer Science at Arizona State University</h3> 
+<h3>A Senior undergraduate pursuing Computer Science at Arizona State University</h3> 
 <p>
   :seedling: I’m currently learning <b>Javascript, React</b></p>
 
