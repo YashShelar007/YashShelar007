@@ -1,9 +1,9 @@
 <h1>Hi :wave:, I am Yash</h1>
-<h3>A Senior undergraduate pursuing Computer Science at Arizona State University</h3> 
+<h3>A Master's Thesis student pursuing Computer Science at Arizona State University</h3> 
 <p>
-  :seedling: I’m currently learning <b>Javascript, React</b></p>
+  :seedling: I’m currently learning <b>Quantization, ML Pipelining</b></p>
 
-  :speech_balloon: Ask me about <b>C++ | C | Javascript | Java</b></p>
+  :speech_balloon: Ask me about <b>Cloud Computing | Data Structures | Algorithms | Mobile Computing</b></p>
 <p>
 :mailbox: How to reach me <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yshelar@asu.edu&su=Hey Yash, just visited your Github!" target="_blank"> <b>yshelar@asu.edu</b></a>
 
