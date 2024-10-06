@@ -10,4 +10,4 @@
 <p>
 <h3>Connect with me:</h3>
 
-<a  href="https://www.linkedin.com/in/yash-shelar-672350208/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="shreyasi-patil-54b18a190" height="30" width="40" /></a>
+<a  href="https://www.linkedin.com/in/shelar-yash/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="yash-shelar-54b18a190" height="30" width="40" /></a>
