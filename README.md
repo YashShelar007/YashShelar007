@@ -41,7 +41,7 @@
 
 ![Yash's GitHub Stats](https://github-readme-stats.vercel.app/api?username=YashShelar007&show_icons=true&theme=dark)  
  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YashShelar007&layout=compact&theme=dark)  
- ![GitHub Streak](https://streak-stats.demolab.com?user=YashShelar007&theme=dark)
+ ![GitHub Streak](https://streak-stats.demolab.com/?user=YashShelar007&theme=dark)
 
 </details>
 
