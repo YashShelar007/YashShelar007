@@ -27,11 +27,17 @@
 
 ## 🔗 Let's Connect
 
-- 🌐 <a href="https://yashshelar.com" target="_blank">Portfolio</a>  
-- 💼 <a href="https://linkedin.com/in/shelar-yash" target="_blank">LinkedIn</a>  
+- 🌐 <a href="https://yashshelar.com" target="_blank">Portfolio</a>
+- 💼 <a href="https://linkedin.com/in/shelar-yash" target="_blank">LinkedIn</a>
 - 📫 <a href="mailto:yshelar2000@gmail.com" target="_blank">Email</a>
 - 🐦 <a href="https://x.com/yashshelar30" target="_blank">Twitter / X</a>
 - 📷 <a href="https://instagram.com/yash.shelar30" target="_blank">Instagram</a>
+
+---
+
+<!--START_SECTION:waka-->
+
+<!--END_SECTION:waka-->
 
 ---
 
