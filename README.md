@@ -23,15 +23,6 @@
 **Databases:** PostgreSQL, DynamoDB, Firebase  
 **ML & MLOps:** PyTorch, TensorFlow, Scikit-learn, MLflow
 
----
-
-## 🔗 Let's Connect
-
-- 🌐 <a href="https://yashshelar.com" target="_blank">Portfolio</a>
-- 💼 <a href="https://linkedin.com/in/shelar-yash" target="_blank">LinkedIn</a>
-- 📫 <a href="mailto:yshelar2000@gmail.com" target="_blank">Email</a>
-- 🐦 <a href="https://x.com/yashshelar30" target="_blank">Twitter / X</a>
-- 📷 <a href="https://instagram.com/yash.shelar30" target="_blank">Instagram</a>
 
 ---
 
@@ -78,3 +69,13 @@ Bash         16 mins         -------------------------   00.67 %
 ### ☕ Support
 
 [![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-black?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://buymeacoffee.com/thatcloudguy)
+
+---
+
+## 🔗 Let's Connect
+
+- 🌐 <a href="https://yashshelar.com" target="_blank">Portfolio</a>
+- 💼 <a href="https://linkedin.com/in/shelar-yash" target="_blank">LinkedIn</a>
+- 📫 <a href="mailto:yshelar2000@gmail.com" target="_blank">Email</a>
+- 🐦 <a href="https://x.com/yashshelar30" target="_blank">Twitter / X</a>
+- 📷 <a href="https://instagram.com/yash.shelar30" target="_blank">Instagram</a>
