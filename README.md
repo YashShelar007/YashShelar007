@@ -1,33 +1,57 @@
-# 👋 Hi, I'm Yash Shelar
+<h1 align="center">👋 Hi, I'm Yash Shelar</h1>
+<h3 align="center">Software Engineer (Cloud Infra / AI-ML) @ Walnutech PBC | MSCS @ ASU</h3>
 
-🎓 Master's in Computer Science @ ASU  
-🔭 Research Assistant @ VISA Lab – Working on Model Compression as a Service  
-🌐 Full-Stack & Cloud Developer | AI Explorer | System Design Enthusiast
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=YashShelar007&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
+</p>
 
 ---
 
 ## 🚀 What I’m Working On
 
-- ⚙️ Building **ZipRide**, a full-stack ride-sharing app scaled to 10K+ users
-- 🤖 Developing AI-driven travel planning tools using **Gemini API + Firebase**
-- ☁️ Designing scalable cloud pipelines with **AWS, Terraform, Docker, K8s**
+- 💼 **Walnutech** – Building secure AWS multi-account infra, deploying microservices, and scaling AI/ML pipelines.  
+- 🔬 **MCaaS** – Cloud-native research pipeline achieving up to **14× model size reduction** and **3.4× faster inference**.  
+- ⚙️ **LLMOps** – Serverless answering service on AWS with Langfuse observability & CI/CD auto-rollbacks.  
+- 🌐 Side Projects: **ZipRide** (ride-sharing app), **VoyageAI** (AI-driven travel planner).  
 
 ---
 
 ## 🛠 Tech Stack Highlights
 
-**Languages:** Python, JavaScript/TypeScript, C++, Java, Swift  
-**Frontend:** React, React Native, Next.js, Expo, Material UI  
-**Backend:** Node.js, Express, Django, Flask  
-**Cloud & DevOps:** AWS, Docker, Kubernetes, Terraform, GitHub Actions  
-**Databases:** PostgreSQL, DynamoDB, Firebase  
-**ML & MLOps:** PyTorch, TensorFlow, Scikit-learn, MLflow
-
+**Languages:** Python, Go, JavaScript/TypeScript, C++, Java, Swift, SQL, Bash  
+**Cloud & Infra:** AWS (ECS, Lambda, Step Functions, S3, API GW, DynamoDB), GCP (GKE, Cloud Functions), Terraform, Docker, Kubernetes  
+**Frameworks:** FastAPI, Flask, React, Next.js, Node.js, Tailwind CSS  
+**Databases:** PostgreSQL, MongoDB, MySQL, Redis, Firebase  
+**ML & MLOps:** PyTorch, TensorFlow, LangChain, MLflow  
+**Observability:** Langfuse (OTel), CloudWatch, Sentry  
 
 ---
 
-<!--START_SECTION:waka-->
+## 💼 Experience (Snapshot)
 
+**Software Engineer @ Walnutech (2025 – Present)**  
+- Secured AWS org with IAM Identity Center + SCP guardrails (0 admin creds).  
+- Deployed ECS Fargate microservices with ALB + autoscaling.  
+- Self-hosted **Langfuse observability** → cut RCA time by 70%.  
+- Tech: Terraform, AWS, GitHub Actions (OIDC), FastAPI, LangChain, OpenAI.  
+
+**Cloud & ML Researcher @ VISA Lab (2024 – 2025)**  
+- Built **Model Compression as a Service (MCaaS)** serverless pipeline (100+ runs/mo).  
+- Reduced model size **14×** with <4% accuracy loss (pruning, quantization, distillation).  
+- Automated infra with Terraform + Docker (CI/CD ↓ 30→5 mins).  
+
+---
+
+## 📂 Featured Projects
+
+- **LLMOps (Serverless LLM Service)** → Terraform-first AWS pipeline, 3.2s cold start, p95 alerts.  
+- **MCaaS (Model Compression as a Service)** → Modular pipeline on AWS achieving 2–14× size reduction.  
+
+---
+
+## 📊 Dev Activity
+
+<!--START_SECTION:waka-->
 ```rust
 From: 08 August 2025 - To: 02 October 2025
 
@@ -43,39 +67,52 @@ JSON                 2 hrs 21 mins   >------------------------   02.55 %
 Bash                 2 hrs 3 mins    >------------------------   02.22 %
 HTML                 1 hr 37 mins    -------------------------   01.75 %
 TSConfig             1 hr 28 mins    -------------------------   01.60 %
-```
+````
 
 <!--END_SECTION:waka-->
 
 ---
 
-<details>
-  <summary>📈 GitHub Stats</summary>
+## 📈 GitHub Stats
 
-![Yash's GitHub Stats](https://github-readme-stats.vercel.app/api?username=YashShelar007&show_icons=true&theme=dark)  
- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YashShelar007&layout=compact&theme=dark)  
- ![GitHub Streak](https://streak-stats.demolab.com/?user=YashShelar007&theme=dark)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YashShelar007&show_icons=true&theme=dark" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YashShelar007&layout=compact&theme=dark" />
+  <img src="https://streak-stats.demolab.com/?user=YashShelar007&theme=dark" />
+</p>
 
-</details>
+[![Yash's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=YashShelar007\&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ---
 
 ## 💡 Quote of the Day
 
-![Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+![Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal\&theme=radical)
 
 ---
 
-### ☕ Support
+## 🛠 Languages & Tools (Icons)
 
-[![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-black?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://buymeacoffee.com/thatcloudguy)
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg" width="40"/>
+</p>
 
 ---
 
 ## 🔗 Let's Connect
 
-- 🌐 <a href="https://yashshelar.com" target="_blank">Portfolio</a>
-- 💼 <a href="https://linkedin.com/in/shelar-yash" target="_blank">LinkedIn</a>
-- 📫 <a href="mailto:yshelar2000@gmail.com" target="_blank">Email</a>
-- 🐦 <a href="https://x.com/yashshelar30" target="_blank">Twitter / X</a>
-- 📷 <a href="https://instagram.com/yash.shelar30" target="_blank">Instagram</a>
+* 🌐 [Portfolio](https://yashshelar.com)
+* 💼 [LinkedIn](https://linkedin.com/in/shelar-yash)
+* 📫 [Email](mailto:yshelar2000@gmail.com)
+* 🐦 [Twitter / X](https://x.com/yashshelar30)
+* 📷 [Instagram](https://instagram.com/yash.shelar30)
