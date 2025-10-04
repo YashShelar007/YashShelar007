@@ -52,22 +52,23 @@
 ## 📊 Dev Activity
 
 <!--START_SECTION:waka-->
+
 ```rust
-From: 08 August 2025 - To: 02 October 2025
+From: 08 August 2025 - To: 03 October 2025
 
-Total Time: 91 hrs 36 mins
+Total Time: 93 hrs 55 mins
 
-JavaScript           20 hrs 50 mins  >>>>>>-------------------   22.46 %
-Python               18 hrs 18 mins  >>>>>--------------------   19.72 %
-Markdown             17 hrs 16 mins  >>>>>--------------------   18.62 %
-Terraform            8 hrs 46 mins   >>-----------------------   09.45 %
-TypeScript           8 hrs 39 mins   >>-----------------------   09.33 %
-YAML                 6 hrs 57 mins   >>-----------------------   07.51 %
-JSON                 2 hrs 21 mins   >------------------------   02.55 %
-Bash                 2 hrs 3 mins    >------------------------   02.22 %
-HTML                 1 hr 37 mins    -------------------------   01.75 %
-TSConfig             1 hr 28 mins    -------------------------   01.60 %
-````
+JavaScript           20 hrs 50 mins  >>>>>--------------------   21.86 %
+Python               18 hrs 33 mins  >>>>>--------------------   19.47 %
+Markdown             18 hrs          >>>>>--------------------   18.89 %
+Terraform            8 hrs 46 mins   >>-----------------------   09.20 %
+TypeScript           8 hrs 39 mins   >>-----------------------   09.08 %
+YAML                 8 hrs 9 mins    >>-----------------------   08.56 %
+JSON                 2 hrs 21 mins   >------------------------   02.48 %
+Bash                 2 hrs 3 mins    >------------------------   02.16 %
+HTML                 1 hr 37 mins    -------------------------   01.70 %
+TSConfig             1 hr 28 mins    -------------------------   01.55 %
+```
 
 <!--END_SECTION:waka-->
 
