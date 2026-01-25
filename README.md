@@ -54,20 +54,20 @@
 <!--START_SECTION:waka-->
 
 ```rust
-From: 08 August 2025 - To: 23 January 2026
+From: 08 August 2025 - To: 24 January 2026
 
-Total Time: 160 hrs 34 mins
+Total Time: 161 hrs 7 mins
 
-Markdown             40 hrs 49 mins  >>>>>>-------------------   24.97 %
-Python               36 hrs 35 mins  >>>>>>-------------------   22.38 %
-JavaScript           20 hrs 53 mins  >>>----------------------   12.78 %
-YAML                 15 hrs 22 mins  >>-----------------------   09.40 %
-TypeScript           13 hrs 10 mins  >>-----------------------   08.06 %
-Terraform            10 hrs 37 mins  >>-----------------------   06.49 %
-Bash                 4 hrs 28 mins   >------------------------   02.74 %
-JSON                 3 hrs 2 mins    -------------------------   01.86 %
-HTML                 3 hrs 1 min     -------------------------   01.85 %
-Other                2 hrs 55 mins   -------------------------   01.79 %
+Markdown             41 hrs 22 mins  >>>>>>-------------------   25.22 %
+Python               36 hrs 35 mins  >>>>>>-------------------   22.30 %
+JavaScript           20 hrs 53 mins  >>>----------------------   12.73 %
+YAML                 15 hrs 22 mins  >>-----------------------   09.37 %
+TypeScript           13 hrs 10 mins  >>-----------------------   08.03 %
+Terraform            10 hrs 37 mins  >>-----------------------   06.47 %
+Bash                 4 hrs 28 mins   >------------------------   02.73 %
+JSON                 3 hrs 2 mins    -------------------------   01.85 %
+HTML                 3 hrs 1 min     -------------------------   01.84 %
+Other                2 hrs 55 mins   -------------------------   01.78 %
 ```
 
 <!--END_SECTION:waka-->
