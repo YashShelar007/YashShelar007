@@ -80,8 +80,10 @@ jobs:
 
           # The WakaTime job commits to this branch too. Rebase and retry rather
           # than fail the run on a race we can simply lose and re-run.
+          # Push explicitly rather than relying on upstream tracking, which
+          # actions/checkout does not guarantee for a scheduled run.
           for attempt in 1 2 3; do
-            if git push; then
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
               echo "pushed on attempt $attempt"
               exit 0
             fi
