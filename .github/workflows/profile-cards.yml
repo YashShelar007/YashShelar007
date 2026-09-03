@@ -1,0 +1,94 @@
+name: Profile cards
+
+# Renders assets/stats-*.svg, assets/languages-*.svg and assets/link-*.svg from
+# the GitHub API and commits them when they change.
+#
+# The README used to embed these two cards from the shared public
+# github-readme-stats instance. That host returns 503 DEPLOYMENT_PAUSED whenever
+# somebody else's free Vercel deployment gets paused, which it does regularly,
+# and every card on the profile then renders as broken-image alt text. Owning the
+# render is the fix. Retrying it, or failing over to another free instance, is
+# the same bet with an extra step.
+#
+# This needs no secrets. The built-in GITHUB_TOKEN reads public repository
+# metadata, per-repository language bytes and the search API, which is all the
+# script asks for. No PAT was created.
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "scripts/profile-cards.mjs"
+      - ".github/workflows/profile-cards.yml"
+  schedule:
+    # 05:40 UTC. Deliberately not 00:00, which is when the WakaTime job runs and
+    # commits to README.md on this same branch.
+    - cron: "40 5 * * *"
+
+permissions:
+  contents: write
+
+# Never two of these at once, and never cancel one mid-push.
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  render:
+    name: Render and commit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Render the cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/profile-cards.mjs --out assets
+
+      # The whole reason this task existed is that a card was embedded without
+      # anyone checking it rendered. An SVG that does not parse is a broken image
+      # that reaches the profile page looking exactly like a working commit.
+      - name: Every SVG must parse as XML
+        run: |
+          set -euo pipefail
+          for f in assets/*.svg; do
+            python3 -c "import sys, xml.dom.minidom; xml.dom.minidom.parse(sys.argv[1])" "$f"
+            echo "ok $f"
+          done
+
+      - name: Commit if changed
+        if: github.event_name != 'pull_request'
+        run: |
+          set -euo pipefail
+          git config user.name  "GitHubActionBot"
+          git config user.email "action-bot@github.com"
+
+          # README.md is never touched by this workflow. The WakaTime markers in
+          # it must stay byte-identical or that job silently stops updating
+          # forever, so only assets/ is ever staged.
+          git add assets
+          if git diff --cached --quiet; then
+            echo "cards unchanged"
+            exit 0
+          fi
+
+          git commit -m "chore(cards): refresh profile cards from the GitHub API"
+
+          # The WakaTime job commits to this branch too. Rebase and retry rather
+          # than fail the run on a race we can simply lose and re-run.
+          # Push explicitly rather than relying on upstream tracking, which
+          # actions/checkout does not guarantee for a scheduled run.
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected, rebasing (attempt $attempt)"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          done
+          echo "could not push after 3 attempts"
+          exit 1

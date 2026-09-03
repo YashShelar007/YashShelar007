@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 224" width="1200" height="224" role="img" aria-labelledby="t d">
+  <title id="t">Public GitHub activity for YashShelar007</title>
+  <desc id="d">13 stars earned, 436 commits authored, 21 pull requests, 19 of those merged, 6 issues opened, 23 public repositories. Measured from public repositories only, so private work is not counted.</desc>
+
+  <rect width="1200" height="224" fill="#0D0B08"/>
+  <rect x="0.5" y="0.5" width="1199" height="223" fill="none" stroke="#282623" stroke-width="1"/>
+  <path d="M22 40 L22 22 L40 22" fill="none" stroke="#765723" stroke-width="1.6"/>
+  <path d="M1160 22 L1178 22 L1178 40" fill="none" stroke="#765723" stroke-width="1.6"/>
+  <path d="M22 184 L22 202 L40 202" fill="none" stroke="#765723" stroke-width="1.6"/>
+  <path d="M1178 184 L1178 202 L1160 202" fill="none" stroke="#765723" stroke-width="1.6"/>
+  <text x="48" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" font-weight="600" letter-spacing="3.4" fill="#EFB146">PUBLIC GITHUB ACTIVITY</text>
+  <text x="1152" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" text-anchor="end" letter-spacing="2.2" fill="#99938A">GITHUB.COM/YASHSHELAR007</text>
+  <line x1="48" y1="76" x2="1152" y2="76" stroke="#282623" stroke-width="1"/>
+  <text x="48.0" y="138" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="36" font-weight="600" letter-spacing="0.5" fill="#EFB146">13</text>
+  <text x="48.0" y="160" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">STARS</text>
+  <text x="48.0" y="177" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">EARNED</text>
+  <line x1="232.0" y1="96" x2="232.0" y2="176" stroke="#282623" stroke-width="1"/>
+  <text x="232.0" y="138" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="36" font-weight="600" letter-spacing="0.5" fill="#EFB146">436</text>
+  <text x="232.0" y="160" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">COMMITS</text>
+  <text x="232.0" y="177" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">AUTHORED</text>
+  <line x1="416.0" y1="96" x2="416.0" y2="176" stroke="#282623" stroke-width="1"/>
+  <text x="416.0" y="138" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="36" font-weight="600" letter-spacing="0.5" fill="#EFB146">21</text>
+  <text x="416.0" y="160" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">PULL</text>
+  <text x="416.0" y="177" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">REQUESTS</text>
+  <line x1="600.0" y1="96" x2="600.0" y2="176" stroke="#282623" stroke-width="1"/>
+  <text x="600.0" y="138" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="36" font-weight="600" letter-spacing="0.5" fill="#EFB146">19</text>
+  <text x="600.0" y="160" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">OF THOSE</text>
+  <text x="600.0" y="177" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">MERGED</text>
+  <line x1="784.0" y1="96" x2="784.0" y2="176" stroke="#282623" stroke-width="1"/>
+  <text x="784.0" y="138" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="36" font-weight="600" letter-spacing="0.5" fill="#EFB146">6</text>
+  <text x="784.0" y="160" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">ISSUES</text>
+  <text x="784.0" y="177" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">OPENED</text>
+  <line x1="968.0" y1="96" x2="968.0" y2="176" stroke="#282623" stroke-width="1"/>
+  <text x="968.0" y="138" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="36" font-weight="600" letter-spacing="0.5" fill="#EFB146">23</text>
+  <text x="968.0" y="160" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">PUBLIC</text>
+  <text x="968.0" y="177" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#99938A">REPOSITORIES</text>
+  <line x1="48" y1="190" x2="1152" y2="190" stroke="#282623" stroke-width="1"/>
+  <text x="48" y="212" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" letter-spacing="1.9" fill="#99938A">MEASURED FROM PUBLIC REPOSITORIES &#183; PRIVATE WORK NOT COUNTED</text>
+  <text x="1152" y="212" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" text-anchor="end" letter-spacing="1.9" fill="#99938A">RENDERED IN THIS REPOSITORY &#183; UPDATED DAILY</text>
+</svg>

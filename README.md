@@ -116,18 +116,26 @@ Bash                       8 hrs 43 mins         >------------------------   02.
 
 <!--END_SECTION:waka-->
 
-<p>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=YashShelar007&show_icons=true&hide_rank=true&disable_animations=true&card_width=420&border_radius=0&bg_color=0D0B08&title_color=EFB146&text_color=C7C3BD&icon_color=EFB146&border_color=282623">
-  <img src="https://github-readme-stats.vercel.app/api?username=YashShelar007&show_icons=true&hide_rank=true&disable_animations=true&card_width=420&border_radius=0&bg_color=FBFAF8&title_color=B47825&text_color=1D1A16&icon_color=B47825&border_color=E0DDDA" alt="GitHub statistics for YashShelar007" height="170"></picture><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=YashShelar007&layout=compact&langs_count=8&disable_animations=true&card_width=420&border_radius=0&bg_color=0D0B08&title_color=EFB146&text_color=C7C3BD&border_color=282623">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YashShelar007&layout=compact&langs_count=8&disable_animations=true&card_width=420&border_radius=0&bg_color=FBFAF8&title_color=B47825&text_color=1D1A16&border_color=E0DDDA" alt="Most used languages for YashShelar007" height="170"></picture>
-</p>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg">
+  <img src="assets/stats-light.svg" alt="Public GitHub activity: stars earned, commits authored, pull requests opened, pull requests merged, issues opened and public repositories. Counted from public repositories only, so private work is not included.">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
+  <img src="assets/languages-light.svg" alt="Languages across every public repository, measured in bytes by GitHub Linguist and shown as a ranked proportion bar with the share held by each language.">
+</picture>
 
 ---
 
 ## ELSEWHERE
 
-- [yashshelar.com](https://yashshelar.com)
-- [LinkedIn](https://linkedin.com/in/shelar-yash), the way to reach me
-- [Résumé, PDF](https://yashshelar.com/resume.pdf)
+<p>
+<a href="https://yashshelar.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-site-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-site-light.svg"><img src="assets/link-site-light.svg" alt="yashshelar.com" height="34"></picture></a>
+<a href="https://linkedin.com/in/shelar-yash"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-linkedin-light.svg"><img src="assets/link-linkedin-light.svg" alt="LinkedIn" height="34"></picture></a>
+<a href="https://yashshelar.com/resume.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-resume-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-resume-light.svg"><img src="assets/link-resume-light.svg" alt="Résumé, PDF" height="34"></picture></a>
+</p>
+
+LinkedIn is the way to reach me.

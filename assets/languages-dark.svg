@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 276" width="1200" height="276" role="img" aria-labelledby="t d">
+  <title id="t">Languages across 23 public repositories</title>
+  <desc id="d">Python 52.0 percent, JavaScript 9.6 percent, Jupyter Notebook 8.5 percent, TypeScript 8.4 percent, HTML 7.8 percent, HCL 4.9 percent, CSS 2.5 percent, PowerShell 2.4 percent, Swift 1.7 percent, TeX 1.0 percent, Dockerfile 0.9 percent, Shell 0.5 percent. Measured in bytes across 1.0 MB of source.</desc>
+
+  <rect width="1200" height="276" fill="#0D0B08"/>
+  <rect x="0.5" y="0.5" width="1199" height="275" fill="none" stroke="#282623" stroke-width="1"/>
+  <path d="M22 40 L22 22 L40 22" fill="none" stroke="#765723" stroke-width="1.6"/>
+  <path d="M1160 22 L1178 22 L1178 40" fill="none" stroke="#765723" stroke-width="1.6"/>
+  <path d="M22 236 L22 254 L40 254" fill="none" stroke="#765723" stroke-width="1.6"/>
+  <path d="M1178 236 L1178 254 L1160 254" fill="none" stroke="#765723" stroke-width="1.6"/>
+  <text x="48" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" font-weight="600" letter-spacing="3.4" fill="#EFB146">LANGUAGES</text>
+  <text x="1152" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" text-anchor="end" letter-spacing="2.2" fill="#99938A">12 LANGUAGES &#183; 1.0 MB &#183; 23 REPOSITORIES</text>
+  <line x1="48" y1="76" x2="1152" y2="76" stroke="#282623" stroke-width="1"/>
+  <rect x="48.00" y="94" width="574.03" height="20" fill="#EFB146"/>
+  <rect x="622.03" y="94" width="106.42" height="20" fill="#E4AD4F"/>
+  <line x1="622.03" y1="94" x2="622.03" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="728.45" y="94" width="93.42" height="20" fill="#DBAA56"/>
+  <line x1="728.45" y1="94" x2="728.45" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="821.87" y="94" width="92.29" height="20" fill="#D2A75D"/>
+  <line x1="821.87" y1="94" x2="821.87" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="914.16" y="94" width="85.84" height="20" fill="#CBA463"/>
+  <line x1="914.16" y1="94" x2="914.16" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="1000.01" y="94" width="53.71" height="20" fill="#C3A269"/>
+  <line x1="1000.01" y1="94" x2="1000.01" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="1053.72" y="94" width="27.90" height="20" fill="#BC9F6F"/>
+  <line x1="1053.72" y1="94" x2="1053.72" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="1081.62" y="94" width="26.18" height="20" fill="#B49D74"/>
+  <line x1="1081.62" y1="94" x2="1081.62" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="1107.80" y="94" width="18.71" height="20" fill="#AD9A7A"/>
+  <line x1="1107.80" y1="94" x2="1107.80" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="1126.51" y="94" width="10.94" height="20" fill="#A6987F"/>
+  <line x1="1126.51" y1="94" x2="1126.51" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="1137.45" y="94" width="9.55" height="20" fill="#A09585"/>
+  <line x1="1137.45" y1="94" x2="1137.45" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="1147.00" y="94" width="5.00" height="20" fill="#99938A"/>
+  <line x1="1147.00" y1="94" x2="1147.00" y2="114" stroke="#0D0B08" stroke-width="1"/>
+  <rect x="48.0" y="147" width="9" height="9" fill="#EFB146"/>
+  <text x="67.0" y="156" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">PYTHON</text>
+  <text x="300.0" y="156" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">52.0%</text>
+  <rect x="324.0" y="147" width="9" height="9" fill="#E4AD4F"/>
+  <text x="343.0" y="156" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">JAVASCRIPT</text>
+  <text x="576.0" y="156" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">9.6%</text>
+  <rect x="600.0" y="147" width="9" height="9" fill="#DBAA56"/>
+  <text x="619.0" y="156" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">JUPYTER NOTEBOOK</text>
+  <text x="852.0" y="156" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">8.5%</text>
+  <rect x="876.0" y="147" width="9" height="9" fill="#D2A75D"/>
+  <text x="895.0" y="156" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">TYPESCRIPT</text>
+  <text x="1128.0" y="156" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">8.4%</text>
+  <rect x="48.0" y="181" width="9" height="9" fill="#CBA463"/>
+  <text x="67.0" y="190" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">HTML</text>
+  <text x="300.0" y="190" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">7.8%</text>
+  <rect x="324.0" y="181" width="9" height="9" fill="#C3A269"/>
+  <text x="343.0" y="190" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">HCL</text>
+  <text x="576.0" y="190" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">4.9%</text>
+  <rect x="600.0" y="181" width="9" height="9" fill="#BC9F6F"/>
+  <text x="619.0" y="190" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">CSS</text>
+  <text x="852.0" y="190" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">2.5%</text>
+  <rect x="876.0" y="181" width="9" height="9" fill="#B49D74"/>
+  <text x="895.0" y="190" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">POWERSHELL</text>
+  <text x="1128.0" y="190" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">2.4%</text>
+  <rect x="48.0" y="215" width="9" height="9" fill="#AD9A7A"/>
+  <text x="67.0" y="224" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">SWIFT</text>
+  <text x="300.0" y="224" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">1.7%</text>
+  <rect x="324.0" y="215" width="9" height="9" fill="#A6987F"/>
+  <text x="343.0" y="224" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">TEX</text>
+  <text x="576.0" y="224" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">1.0%</text>
+  <rect x="600.0" y="215" width="9" height="9" fill="#A09585"/>
+  <text x="619.0" y="224" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">DOCKERFILE</text>
+  <text x="852.0" y="224" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">0.9%</text>
+  <rect x="876.0" y="215" width="9" height="9" fill="#99938A"/>
+  <text x="895.0" y="224" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="1.6" fill="#F6F5F2">SHELL</text>
+  <text x="1128.0" y="224" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" text-anchor="end" letter-spacing="1.2" fill="#99938A">0.5%</text>
+  <line x1="48" y1="242" x2="1152" y2="242" stroke="#282623" stroke-width="1"/>
+  <text x="48" y="262" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" letter-spacing="1.9" fill="#99938A">MEASURED IN BYTES BY GITHUB LINGUIST &#183; A LANGUAGE EARNS A ROW BY VOLUME OR BY APPEARING IN TWO OR MORE REPOSITORIES</text>
+</svg>

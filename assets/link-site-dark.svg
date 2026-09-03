@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 34" width="174" height="34" role="img" aria-labelledby="t d">
+  <title id="t">YASHSHELAR.COM</title>
+  <desc id="d">Link to YASHSHELAR.COM</desc>
+
+  <rect x="0.6" y="0.6" width="172.8" height="32.8" fill="none" stroke="#282623" stroke-width="1.2"/>
+  <line x1="1.2" y1="0.6" x2="1.2" y2="33.4" stroke="#EFB146" stroke-width="2.4"/>
+  <g transform="translate(13, 9)">
+    <circle cx="8" cy="8" r="7" fill="none" stroke="#EFB146" stroke-width="1.4"/>
+    <ellipse cx="8" cy="8" rx="3.1" ry="7" fill="none" stroke="#EFB146" stroke-width="1.4"/>
+    <line x1="1.2" y1="5.4" x2="14.8" y2="5.4" stroke="#EFB146" stroke-width="1.4"/>
+    <line x1="1.2" y1="10.6" x2="14.8" y2="10.6" stroke="#EFB146" stroke-width="1.4"/>
+  </g>
+  <text x="40" y="22" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" letter-spacing="2" fill="#F6F5F2">YASHSHELAR.COM</text>
+</svg>
