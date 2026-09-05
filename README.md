@@ -98,20 +98,20 @@ Right now that means **Vantion**, Walnutech's product, which I took from zero to
 <!--START_SECTION:waka-->
 
 ```rust
-From: 08 August 2025 - To: 02 September 2026
+From: 08 August 2025 - To: 03 September 2026
 
-Total Time: 365 hrs 53 mins
+Total Time: 366 hrs 15 mins
 
-Markdown                   109 hrs 10 mins       >>>>>>>------------------   27.17 %
-Python                     73 hrs 56 mins        >>>>>--------------------   18.40 %
-TypeScript                 71 hrs 42 mins        >>>>---------------------   17.85 %
-Other                      35 hrs 51 mins        >>-----------------------   08.93 %
-JavaScript                 22 hrs 43 mins        >------------------------   05.66 %
-YAML                       21 hrs 23 mins        >------------------------   05.32 %
-Terraform                  11 hrs 33 mins        >------------------------   02.88 %
-SQL                        10 hrs 16 mins        >------------------------   02.56 %
-JSON                       8 hrs 51 mins         >------------------------   02.21 %
-Bash                       8 hrs 43 mins         >------------------------   02.17 %
+Markdown                   109 hrs 10 mins       >>>>>>>------------------   27.05 %
+Python                     73 hrs 56 mins        >>>>>--------------------   18.32 %
+TypeScript                 72 hrs 3 mins         >>>>---------------------   17.85 %
+Other                      37 hrs 19 mins        >>-----------------------   09.25 %
+JavaScript                 22 hrs 43 mins        >------------------------   05.63 %
+YAML                       21 hrs 23 mins        >------------------------   05.30 %
+Terraform                  11 hrs 33 mins        >------------------------   02.86 %
+SQL                        10 hrs 16 mins        >------------------------   02.55 %
+JSON                       8 hrs 51 mins         >------------------------   02.20 %
+Bash                       8 hrs 43 mins         >------------------------   02.16 %
 ```
 
 <!--END_SECTION:waka-->
