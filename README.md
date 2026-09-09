@@ -98,7 +98,7 @@ Right now that means **Vantion**, Walnutech's product, which I took from zero to
 <!--START_SECTION:waka-->
 
 ```rust
-From: 08 August 2025 - To: 06 September 2026
+From: 08 August 2025 - To: 07 September 2026
 
 Total Time: 366 hrs 30 mins
 
