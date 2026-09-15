@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-labelledby="t d">
-  <title id="t">Yash Shelar &#183; Software Development Engineer</title>
+  <title id="t">Yash Shelar &#183; AI Infrastructure Engineer</title>
   <desc id="d">Faceplate: name, role, availability, and five measured results from production work.</desc>
 
   <rect width="1200" height="340" fill="#0D0B08"/>
@@ -72,11 +72,11 @@
 
   <text x="48" y="96" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="46" font-weight="650" letter-spacing="5" fill="#F6F5F2">YASH SHELAR</text>
   <line x1="48" y1="116" x2="300" y2="116" stroke="#EFB146" stroke-width="2"/>
-  <text x="48" y="142" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="500" letter-spacing="2.6" fill="#99938A">SOFTWARE DEVELOPMENT ENGINEER &#183; WALNUTECH PBC</text>
+  <text x="48" y="142" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="500" letter-spacing="2.6" fill="#99938A">AI INFRASTRUCTURE ENGINEER</text>
 
   <text x="1130" y="90" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12" letter-spacing="3" fill="#36DCEC">AVAILABLE</text>
   <circle cx="1145" cy="86" r="4.5" fill="#36DCEC"/>
-  <text x="1152" y="116" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="2.4" fill="#99938A">SDE 2 &#183; AI INFRASTRUCTURE</text>
+  <text x="1152" y="116" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" letter-spacing="2.4" fill="#99938A">AI INFRASTRUCTURE ROLES</text>
 
   <line x1="48" y1="176" x2="1152" y2="176" stroke="#282623" stroke-width="1"/>
   

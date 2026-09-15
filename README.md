@@ -1,12 +1,12 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img src="assets/header-light.svg" alt="Yash Shelar. Software Development Engineer at Walnutech PBC, Phoenix, Arizona. Available for SDE 2 and AI infrastructure roles, full-time only, requires visa sponsorship. 200+ users on Vantion built from zero. ~90% of the implementation as sole engineer. 65% fewer access requests on the AWS org. 5x lower query latency with pgvector. 43,000+ scholarships in hybrid search.">
+  <img src="assets/header-light.svg" alt="Yash Shelar. AI infrastructure engineer, Phoenix, Arizona. Open to AI infrastructure roles, full-time only, requires visa sponsorship. 200+ users on Vantion built from zero. ~90% of the implementation as sole engineer. 65% fewer access requests on the AWS org. 5x lower query latency with pgvector. 43,000+ scholarships in hybrid search.">
 </picture>
 
 I build AI infrastructure and the evaluation that tells you whether it works.
 
-Right now that means **Vantion**, Walnutech's product, which I took from zero to `200+` users and wrote `~90%` of across backend, ML, infrastructure, console and frontend. For most of that time I was the only engineer at a company of three. That is the denominator the number needs.
+Right now that means **Vantion**, an AI product I took from zero to `200+` users and wrote `~90%` of across backend, ML, infrastructure, console and frontend. For most of that time I was the only engineer at a company of three. That is the denominator the number needs.
 
 ---
 
@@ -16,6 +16,7 @@ Right now that means **Vantion**, Walnutech's product, which I took from zero to
 | --- | --- |
 | **Vantion** | Walnutech's product. Zero to `200+` users, `~90%` of the implementation. Scholarship matching, hybrid search over `43,000+` records, LLM evaluation in production. Closed source. |
 | **[pathwise](https://github.com/YashShelar007/pathwise)** | Trajectory evaluation for AI agents. Scores *how* an agent reached an answer, not only the answer, so wrong reasoning, tool misuse, loops and silently recovered errors stop passing. Assertions run across N repeated runs and report a pass-rate distribution, because agents are stochastic and a single boolean hides that. Apache-2.0. |
+| **[claude-workflows](https://github.com/YashShelar007/claude-workflows)** | Claude Code plugins for engineering process. Blind multi-model review with adjudication, so a review verdict comes from models that haven't seen each other's take before something merges. MIT. |
 | **Vera** | Agentic personal assistant, production PWA. Tool use over Postgres full-text search, web search with citations, application tracking and email drafting. Three-tier tool permissions (read, write, act) enforced in one execution path, so anything irreversible or outward-facing needs explicit confirmation. Email is drafted, never sent. Private repo. |
 
 ---
@@ -59,6 +60,8 @@ Right now that means **Vantion**, Walnutech's product, which I took from zero to
 **A confident model answer is a starting point, not a conclusion.** On MCaaS I implemented unstructured pruning because an LLM said it would reduce model size. It zeroes weights, it does not remove them, so the file on disk was exactly the same size. I had already taken that result to my professor.
 
 **Ask a model for structure, not for the answer.** Matching student profiles against scholarship eligibility with an LLM directly was bad. The match should stay deterministic, SQL and explicit rules, with the model converting eligibility prose into machine-checkable rules, ontology fields and entity relationships. Structure can be verified. An answer has to be trusted.
+
+**Measured, not claimed.** [yashshelar.com](https://yashshelar.com) ships behind its own `npm run verify` gate, and its animation performance is graded by an outside tool rather than described in prose: [![MotionScore](https://api.motion.dev/score/badge?url=yashshelar.com)](https://score.motion.dev/site/yashshelar.com), re-measured on every load.
 
 ---
 
