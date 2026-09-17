@@ -101,7 +101,7 @@ Right now that means **Vantion**, an AI product I took from zero to `200+` users
 <!--START_SECTION:waka-->
 
 ```rust
-From: 08 August 2025 - To: 14 September 2026
+From: 08 August 2025 - To: 15 September 2026
 
 Total Time: 366 hrs 30 mins
 
