@@ -8,7 +8,7 @@
 
 #### Claude Code usage
 
-What it measures: tokens processed by Claude Code across my machines, input plus output plus cache, read from local transcripts, plus session count and current streak.
+What it measures: tokens processed by Claude Code across my machines, input plus output plus cache, read from local transcripts and counted once per API response, the way it's billed, plus session count and current streak. Claude Code's own Stats screen reads 2 to 3x higher because it counts the same response once per streamed block; the gist's `stats.json` also carries that number, as `tokens_raw`, for comparison.
 Why it's trustworthy: aggregates only, no paths or session content; the gist's revision history is the audit trail.
 
 I build AI infrastructure and the evaluation that tells you whether it works.
