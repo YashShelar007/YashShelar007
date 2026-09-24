@@ -4,6 +4,13 @@
   <img src="assets/header-light.svg" alt="Yash Shelar. AI infrastructure engineer, Phoenix, Arizona. Open to AI infrastructure roles, full-time only, requires visa sponsorship. 200+ users on Vantion built from zero. ~90% of the implementation as sole engineer. 65% fewer access requests on the AWS org. 5x lower query latency with pgvector. 43,000+ scholarships in hybrid search.">
 </picture>
 
+[![Claude Code](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/YashShelar007/9c16505eb7149f47a0c80396613d69a2/raw/stats-badge.json)](https://gist.github.com/YashShelar007/9c16505eb7149f47a0c80396613d69a2)
+
+#### Claude Code usage
+
+What it measures: tokens processed by Claude Code across my machines, input plus output plus cache, read from local transcripts, plus session count and current streak.
+Why it's trustworthy: aggregates only, no paths or session content; the gist's revision history is the audit trail.
+
 I build AI infrastructure and the evaluation that tells you whether it works.
 
 Right now that means **Vantion**, an AI product I took from zero to `200+` users and wrote `~90%` of across backend, ML, infrastructure, console and frontend. For most of that time I was the only engineer at a company of three. That is the denominator the number needs.
