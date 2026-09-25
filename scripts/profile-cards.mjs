@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Renders the profile cards as SVG, from the GitHub API, into assets/.
+ * Renders the header and the profile cards as SVG into assets/: the cards from
+ * the GitHub API, the header's Claude Code strip from the public stats gist.
  *
  * Why this exists: the README used to embed two images from the shared public
  * github-readme-stats instance. That is somebody else's free Vercel deployment,
@@ -37,6 +38,9 @@ import { writeFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
 
 const API = "https://api.github.com";
+const GIST =
+  "https://gist.github.com/YashShelar007/9c16505eb7149f47a0c80396613d69a2";
+const CLAUDE_STATS = `${GIST.replace("gist.github.com", "gist.githubusercontent.com")}/raw/stats.json`;
 
 const args = process.argv.slice(2);
 const flag = (name, fallback) => {
@@ -138,6 +142,38 @@ async function collect() {
   };
 }
 
+/* Claude Code usage, from the gist a local job publishes. Same rule 2 as the
+ * GitHub counts: anything missing or malformed throws, nothing is written, and
+ * the last good header stays committed. A header that says 0 tokens because a
+ * CDN hiccuped is a false claim on the first thing a visitor reads.
+ */
+async function collectClaude() {
+  const res = await fetch(CLAUDE_STATS, {
+    headers: { "user-agent": `${USER}-profile-cards` },
+  });
+  if (!res.ok)
+    throw new Error(`Claude stats ${res.status} ${res.statusText} for ${CLAUDE_STATS}`);
+  const s = await res.json();
+  const count = (v, name) => {
+    if (!Number.isFinite(v) || v < 0)
+      throw new Error(`Claude stats: ${name} is ${JSON.stringify(v)}; refusing to render it.`);
+    return v;
+  };
+  const tokens = count(s.tokens?.total, "tokens.total");
+  if (tokens === 0) throw new Error("Claude stats: tokens.total is 0; refusing to render it.");
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s.first_active ?? ""))
+    throw new Error(`Claude stats: first_active is ${JSON.stringify(s.first_active)}.`);
+  return {
+    tokens,
+    sessions: count(s.sessions, "sessions"),
+    activeDays: count(s.active_days, "active_days"),
+    streak: count(s.streak?.current, "streak.current"),
+    longest: count(s.streak?.longest, "streak.longest"),
+    since: s.first_active,
+    machines: Array.isArray(s.machines) ? s.machines.length : 0,
+  };
+}
+
 /* --------------------------------------------------------- language selection
  *
  * The old card was capped at 8, which hid HCL/Terraform, Shell, Swift, TeX,
@@ -183,8 +219,9 @@ function selectLanguages({ languages, repoCount }) {
 
 /* -------------------------------------------------------------------- palette
  *
- * Lifted from assets/header-dark.svg and assets/header-light.svg. Cyan (#36DCEC
- * dark, #047781 light) is reserved for "live" and is deliberately absent here.
+ * Lifted from the original hand-drawn header. Cyan (`live`) is reserved for
+ * things that are live, which on this profile means availability and the
+ * nightly Claude Code figures, and is deliberately absent from the cards.
  */
 const THEMES = {
   dark: {
@@ -198,6 +235,8 @@ const THEMES = {
     // reader cannot pick out is not a legend entry. `muted` is legible on this
     // ground by definition: it is the colour every label is already set in.
     rampEnd: "#99938A",
+    tick: "#3A3835",
+    live: "#36DCEC",
   },
   light: {
     bg: "#FBFAF8",
@@ -207,9 +246,13 @@ const THEMES = {
     ink: "#1D1A16",
     muted: "#6D6860",
     rampEnd: "#6D6860",
+    tick: "#CFCBC6",
+    live: "#047781",
   },
 };
 
+const SANS =
+  "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
 const MONO =
   "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace";
 
@@ -285,11 +328,122 @@ const doc = (w, h, title, desc, body) =>
   `  <desc id="d">${esc(desc)}</desc>\n\n` +
   `${body}\n</svg>\n`;
 
-/* ---------------------------------------------------------------- stats card */
-
 const W = 1200;
 const PAD = 48;
 const INNER = W - PAD * 2;
+
+/* -------------------------------------------------------------------- header
+ *
+ * The faceplate at the top of the README. It was a hand-drawn SVG until the
+ * Claude Code figures joined it; it is generated now so those figures can be
+ * live without a third-party badge. Everything above the Claude strip is the
+ * original drawing, coordinate for coordinate.
+ *
+ * The strip reuses the metric row's five-column grid and type: amber numerals,
+ * small-caps labels, hairline dividers. Its label sits where a tile would, and
+ * the cyan "updated nightly" readout mirrors AVAILABLE in the top-right corner,
+ * because both are the only live things on the card.
+ */
+const compact = (n) =>
+  n >= 1e9
+    ? `${(n / 1e9).toFixed(1)}B`
+    : n >= 1e6
+      ? `${(n / 1e6).toFixed(1)}M`
+      : num(n);
+
+const MONTHS = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY",
+  "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+
+const METRICS = [
+  ["200+", "USERS ON VANTION", "BUILT FROM ZERO"],
+  ["~90%", "OF IMPLEMENTATION", "SOLE ENGINEER"],
+  ["65%", "FEWER ACCESS", "REQUESTS · AWS ORG"],
+  ["5×", "LOWER QUERY", "LATENCY · PGVECTOR"],
+  ["43k+", "SCHOLARSHIPS", "IN HYBRID SEARCH"],
+];
+
+function renderHeader(c, t) {
+  const H = 496;
+  const step = INNER / METRICS.length;
+  const col = (i) => (PAD + i * step).toFixed(1);
+  const divider = (x, y1, y2) =>
+    `  <line x1="${x}" y1="${y1}" x2="${x}" y2="${y2}" stroke="${t.hairline}" stroke-width="1"/>`;
+  const tile = (i, top, [value, l1, l2]) => [
+    ...(i > 0 ? [divider(col(i), top + 22, top + 108)] : []),
+    text(col(i), top + 56, value, { size: 38, ls: 0.5, fill: t.accent, weight: 600 }),
+    text(col(i), top + 82, l1, { fill: t.muted }),
+    text(col(i), top + 99, l2, { fill: t.muted }),
+  ];
+
+  const parts = [
+    `  <rect width="${W}" height="${H}" fill="${t.bg}"/>`,
+    `  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" fill="none" stroke="${t.hairline}" stroke-width="1"/>`,
+  ];
+  // Ruler ticks along the top edge, a major one on every tile boundary.
+  for (let i = 0; i <= 60; i++) {
+    const x = (PAD + i * 18.4).toFixed(1);
+    const major = i % 5 === 0;
+    parts.push(
+      `  <line x1="${x}" y1="0" x2="${x}" y2="${major ? 11 : 6}" stroke="${major ? t.tick : t.hairline}" stroke-width="1"/>`,
+    );
+  }
+  parts.push(brackets(W, H, t.bracket), "");
+
+  parts.push(
+    text(PAD, 96, "YASH SHELAR", { font: SANS, size: 46, weight: 650, ls: 5, fill: t.ink }),
+    `  <line x1="${PAD}" y1="116" x2="300" y2="116" stroke="${t.accent}" stroke-width="2"/>`,
+    text(PAD, 142, "AI INFRASTRUCTURE ENGINEER", { font: SANS, size: 14.5, weight: 500, ls: 2.6, fill: t.muted }),
+    "",
+    text(1130, 90, "AVAILABLE", { size: 12, ls: 3, fill: t.live, anchor: "end" }),
+    `  <circle cx="1145" cy="86" r="4.5" fill="${t.live}"/>`,
+    text(W - PAD, 116, "AI INFRASTRUCTURE ROLES", { ls: 2.4, fill: t.muted, anchor: "end" }),
+    "",
+    rule(PAD, 176, W - PAD, t.hairline),
+  );
+  METRICS.forEach((m, i) => parts.push(...tile(i, 176, m)));
+  parts.push(rule(PAD, 302, W - PAD, t.hairline), "");
+
+  // The Claude Code strip.
+  const [y, m] = c.since.split("-");
+  const streakNote =
+    c.streak > 0 && c.streak === c.longest
+      ? "CURRENT, LONGEST YET"
+      : `LONGEST ${num(c.longest)} DAYS`;
+  parts.push(
+    text(PAD, 358, "CLAUDE CODE", { size: 13, ls: 3.4, fill: t.accent, weight: 600 }),
+    text(PAD, 384, `SINCE ${MONTHS[Number(m) - 1]} ${y}`, { fill: t.muted }),
+  );
+  if (c.machines > 1)
+    parts.push(text(PAD, 401, `ACROSS ${c.machines} MACHINES`, { fill: t.muted }));
+  parts.push(
+    ...tile(1, 302, [compact(c.tokens), "TOKENS PROCESSED", "INPUT, OUTPUT, CACHE"]),
+    ...tile(2, 302, [num(c.sessions), "SESSIONS", `OVER ${num(c.activeDays)} ACTIVE DAYS`]),
+    ...tile(3, 302, [num(c.streak), "DAY STREAK", streakNote]),
+    text(1130, 352, "UPDATED NIGHTLY", { size: 12, ls: 3, fill: t.live, anchor: "end" }),
+    `  <circle cx="1145" cy="348" r="4.5" fill="${t.live}"/>`,
+    text(W - PAD, 378, "FROM A PUBLIC GIST", { ls: 2.4, fill: t.muted, anchor: "end" }),
+    `  <a href="${GIST}">`,
+    "  " + text(PAD, 440, "COUNTED ONCE PER RESPONSE, THE BILLED FIGURE. FULL METHOD IN THE GIST.", { size: 11, ls: 1.9, fill: t.muted }),
+    `  </a>`,
+    rule(PAD, 458, W - PAD, t.hairline),
+    "",
+    text(PAD, 482, "PHOENIX, ARIZONA · UNITED STATES", { size: 11, ls: 1.9, fill: t.muted }),
+    text(W - PAD, 482, "FULL-TIME ONLY · REQUIRES VISA SPONSORSHIP", { size: 11, ls: 1.9, fill: t.muted, anchor: "end" }),
+  );
+
+  return doc(
+    W,
+    H,
+    "Yash Shelar · AI Infrastructure Engineer",
+    "Faceplate: name, role, availability, five measured results from production work, " +
+      `and Claude Code usage: ${compact(c.tokens)} tokens processed, ${num(c.sessions)} sessions, ` +
+      `a ${num(c.streak)} day streak, counted once per response and updated nightly.`,
+    parts.join("\n"),
+  );
+}
+
+/* ---------------------------------------------------------------- stats card */
+
 
 function renderStats(data, t) {
   const H = 224;
@@ -525,7 +679,9 @@ const BADGES = [
 
 /* ---------------------------------------------------------------------- main */
 
-const data = await collect();
+// Both sources are fetched before anything is written, so a failure in either
+// leaves every committed file as it was.
+const [data, claude] = await Promise.all([collect(), collectClaude()]);
 const selected = selectLanguages(data);
 
 if (PRINT_JSON) {
@@ -542,6 +698,7 @@ await mkdir(OUT, { recursive: true });
 
 const files = [];
 for (const [name, theme] of Object.entries(THEMES)) {
+  files.push([`header-${name}.svg`, renderHeader(claude, theme)]);
   files.push([`stats-${name}.svg`, renderStats(data, theme)]);
   files.push([`languages-${name}.svg`, renderLanguages(data, theme)]);
   for (const b of BADGES)
@@ -553,5 +710,6 @@ for (const [name, svg] of files) await writeFile(join(OUT, name), svg, "utf8");
 console.error(
   `wrote ${files.length} files to ${OUT}/\n` +
     `  stars ${data.stars} | commits ${data.commits} | prs ${data.prs} (${data.merged} merged) | ` +
-    `issues ${data.issues} | repos ${data.repos} | languages ${selected.rows.length} of ${Object.keys(data.languages).length}`,
+    `issues ${data.issues} | repos ${data.repos} | languages ${selected.rows.length} of ${Object.keys(data.languages).length}\n` +
+    `  claude ${claude.tokens} tokens | ${claude.sessions} sessions | streak ${claude.streak}`,
 );
