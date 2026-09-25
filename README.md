@@ -1,15 +1,10 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img src="assets/header-light.svg" alt="Yash Shelar. AI infrastructure engineer, Phoenix, Arizona. Open to AI infrastructure roles, full-time only, requires visa sponsorship. 200+ users on Vantion built from zero. ~90% of the implementation as sole engineer. 65% fewer access requests on the AWS org. 5x lower query latency with pgvector. 43,000+ scholarships in hybrid search.">
+  <img src="assets/header-light.svg" alt="Yash Shelar. AI infrastructure engineer, Phoenix, Arizona. Open to AI infrastructure roles, full-time only, requires visa sponsorship. 200+ users on Vantion built from zero. ~90% of the implementation as sole engineer. 65% fewer access requests on the AWS org. 5x lower query latency with pgvector. 43,000+ scholarships in hybrid search. Claude Code usage, updated nightly: tokens processed, sessions and current day streak.">
 </picture>
 
-[![Claude Code](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/YashShelar007/9c16505eb7149f47a0c80396613d69a2/raw/stats-badge.json)](https://gist.github.com/YashShelar007/9c16505eb7149f47a0c80396613d69a2)
-
-#### Claude Code usage
-
-What it measures: tokens processed by Claude Code across my machines, input plus output plus cache, read from local transcripts and counted once per API response, the way it's billed, plus session count and current streak. Claude Code's own Stats screen reads 2 to 3x higher because it counts the same response once per streamed block; the gist's `stats.json` also carries that number, as `tokens_raw`, for comparison.
-Why it's trustworthy: aggregates only, no paths or session content; the gist's revision history is the audit trail.
+<sub>The Claude Code figures in the header are regenerated nightly from a <a href="https://gist.github.com/YashShelar007/9c16505eb7149f47a0c80396613d69a2">public gist</a> whose revision history is the audit trail.</sub>
 
 I build AI infrastructure and the evaluation that tells you whether it works.
 
