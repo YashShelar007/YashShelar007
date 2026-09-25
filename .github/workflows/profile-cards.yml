@@ -1,7 +1,9 @@
 name: Profile cards
 
-# Renders assets/stats-*.svg, assets/languages-*.svg and assets/link-*.svg from
-# the GitHub API and commits them when they change.
+# Renders assets/header-*.svg, assets/stats-*.svg, assets/languages-*.svg and
+# assets/link-*.svg and commits them when they change. The cards come from the
+# GitHub API; the header's Claude Code strip comes from the public stats gist
+# (tokens, sessions, streak), so those figures stay live without a badge.
 #
 # The README used to embed these two cards from the shared public
 # github-readme-stats instance. That host returns 503 DEPLOYMENT_PAUSED whenever
@@ -12,10 +14,18 @@ name: Profile cards
 #
 # This needs no secrets. The built-in GITHUB_TOKEN reads public repository
 # metadata, per-repository language bytes and the search API, which is all the
-# script asks for. No PAT was created.
+# script asks for. No PAT was created. The gist is public and read anonymously.
+#
+# If either source fails the script throws before writing anything, the job goes
+# red, and the last good header and cards stay committed.
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/profile-cards.mjs"
+      - ".github/workflows/profile-cards.yml"
   pull_request:
     paths:
       - "scripts/profile-cards.mjs"
@@ -76,7 +86,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore(cards): refresh profile cards from the GitHub API"
+          git commit -m "chore(cards): refresh the header and profile cards"
 
           # The WakaTime job commits to this branch too. Rebase and retry rather
           # than fail the run on a race we can simply lose and re-run.
