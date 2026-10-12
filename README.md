@@ -103,16 +103,16 @@ Right now that means **Vantion**, an AI product I took from zero to `200+` users
 <!--START_SECTION:waka-->
 
 ```rust
-From: 08 August 2025 - To: 09 October 2026
+From: 08 August 2025 - To: 11 October 2026
 
 Total Time: 382 hrs 56 mins
 
-Markdown                   113 hrs 3 mins        >>>>>>-------------------   24.87 %
-TypeScript                 81 hrs 10 mins        >>>>---------------------   17.86 %
-Python                     73 hrs 58 mins        >>>>---------------------   16.27 %
-Other                      71 hrs 36 mins        >>>>---------------------   15.75 %
-JavaScript                 24 hrs 28 mins        >------------------------   05.38 %
-YAML                       21 hrs 23 mins        >------------------------   04.71 %
+Markdown                   113 hrs 3 mins        >>>>>>-------------------   24.83 %
+TypeScript                 81 hrs 10 mins        >>>>---------------------   17.82 %
+Python                     73 hrs 58 mins        >>>>---------------------   16.24 %
+Other                      72 hrs 27 mins        >>>>---------------------   15.91 %
+JavaScript                 24 hrs 28 mins        >------------------------   05.37 %
+YAML                       21 hrs 23 mins        >------------------------   04.70 %
 Terraform                  11 hrs 33 mins        >------------------------   02.54 %
 SQL                        10 hrs 16 mins        >------------------------   02.26 %
 JSON                       9 hrs 10 mins         >------------------------   02.02 %
